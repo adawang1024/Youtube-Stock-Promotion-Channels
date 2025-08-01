@@ -11,9 +11,9 @@ Following the approach from _Influencers as Information Intermediaries_, we coll
 ### 2. **Extraction of Top Words and Bigrams:**  
    - **Text Processing:** Channel titles and descriptions were cleaned and lowercased. Generic words and pronouns (e.g., "welcome," "channel," "I," "you") were excluded.
    - **TF-IDF Analysis:** We used `TfidfVectorizer` (scikit-learn) to rank term importance:
-     - **Top 10 Words (Titles):** Unigrams from titles, filtered for relevance.
-     - **Top 10 Words (Descriptions):** Unigrams from descriptions, similarly filtered.
-     - **Top 10 Bigrams (Descriptions):** Bigrams (two-word phrases) from descriptions, filtered for quality.
+     - **Top 10 Words (Titles):** Unigrams from titles outstanding for the given title text
+     - **Top 10 Words (Descriptions):** Unigrams from descriptions
+     - **Top 10 Bigrams (Descriptions):** Bigrams (two-word phrases) from descriptions
    - **Selection Criteria:** Only included words/bigrams without numbers or punctuation, not in exclusion sets of generic words, and at least three characters long.
    - **Results:**
 
